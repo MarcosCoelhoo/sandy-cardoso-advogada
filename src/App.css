@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Barlow:wght@400;500;600&display=swap');
+
+:root {
+  --principal-50: #fbf5f5;
+  --principal-100: #f7edec;
+  --principal-200: #efdddc;
+  --principal-300: #e2c0bf;
+  --principal-400: #d29a9a;
+  --principal-500: #c07a7c;
+  --principal-600: #a6585e;
+  --principal-700: #8a464c;
+  --principal-800: #753c44;
+  --principal-900: #65363d;
+  --principal-950: #371a1e;
+
+  --bw-50: #f6f6f6;
+  --bw-100: #e7e7e7;
+  --bw-200: #d1d1d1;
+  --bw-300: #b0b0b0;
+  --bw-400: #7c7c7c;
+  --bw-500: #6d6d6d;
+  --bw-600: #5d5d5d;
+  --bw-700: #4f4f4f;
+  --bw-800: #454545;
+  --bw-900: #3d3d3d;
+  --bw-950: #262626;
+
+  --font-title: 'Alice', serif;
+  --font-text: 'Barlow', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
