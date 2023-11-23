@@ -13,6 +13,8 @@
   --principal-900: #65363d;
   --principal-950: #371a1e;
 
+  --principal-gradient: linear-gradient(to bottom, #D29A9A, #C07A7C);
+
   --bw-50: #f6f6f6;
   --bw-100: #e7e7e7;
   --bw-200: #d1d1d1;
@@ -37,6 +39,7 @@
 
 body {
   background: var(--bw-50);
+  margin-bottom: 400px;
 }
 
 ul, li {
@@ -46,4 +49,15 @@ ul, li {
 a {
   text-decoration: none;
   color: var(--bw-900);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+svg {
+  width: 100%;
+  height: 100%;
 }
