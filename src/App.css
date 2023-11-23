@@ -35,6 +35,15 @@
   box-sizing: border-box;
 }
 
+body {
+  background: var(--bw-50);
+}
+
 ul, li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--bw-900);
 }

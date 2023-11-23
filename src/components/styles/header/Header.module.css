@@ -1,0 +1,204 @@
+.container {
+  background: var(--bw-50);
+  position: relative;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.miniHeader {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-text);
+  font-size: 1rem;
+  background: var(--principal-300);
+  padding: 0.25rem 4rem;
+  font-weight: 500;
+  color: var(--principal-900);
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+}
+
+.logo {
+  width: 5.5rem;
+}
+
+.logo svg {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.logo svg * {
+  fill: var(--principal-400);
+  transition: fill .3s ;
+}
+
+.logo:hover svg * {
+  fill: var(--principal-500);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-family: var(--font-text);
+  font-size: 1.25rem;
+  color: var(--principal-800);
+  font-weight: 600;
+}
+
+.link {
+  position: relative;
+  transition: color .3s ;
+}
+
+.link::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: var(--principal-300);
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  transition: width .3s ease;
+}
+
+.link:hover {
+  color: var(--principal-400);
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.btnCta {
+  color: var(--principal-400);
+  font-weight: 600;
+  border: 2px solid var(--principal-400);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+
+  position: relative;
+  text-align: center;
+  letter-spacing: 0.0625rem;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 var(--principal-400);
+  transition: ease-out 0.5s;
+}
+
+.btnCta:hover {
+  color: var(--bw-50);
+  box-shadow: inset 0 -100px 0 0 var(--principal-400);
+}
+
+.btnCta:active {
+  transform: scale(0.9);
+}
+
+.menuContainer {
+  cursor: pointer;
+  width: 2.5rem;
+  display: none;
+}
+
+.menuContainer svg {
+  width: 100%;
+  height: 100%;
+}
+
+.menuContainer svg * {
+  fill: var(--principal-400);
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 750px) {
+  
+
+  .miniHeader {
+    display: none;
+  }
+
+  .miniHeader p:nth-child(1) {
+    display: none;
+  }
+
+  .header {
+    padding: 1.25rem 2rem;
+  }
+
+  .logo {
+    width: 5rem;
+  }
+  
+  .nav {
+    display: none;
+    opacity: 0;
+
+
+    position: absolute;
+    flex-direction: column;
+    
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    width: 95%;
+    padding: 1.75rem 2rem;
+    background: var(--principal-100);
+    border-bottom: 2px solid var(--principal-400);
+    border-radius: 8px;
+  } 
+
+  .nav.visible {
+    display: inherit;
+    opacity: 1;
+    animation: showMenu .3s ease-out;
+  }
+
+  @keyframes showMenu {
+    from {
+      display: none;
+      opacity: 0;
+      top: 100%;
+    }
+
+    to {
+      display: inherit;
+      opacity: 1;
+      top: 120%;
+    }
+  }
+
+  .link::after {
+    content: '';
+    width: 40%;
+    height: 2px;
+    background: var(--principal-400);
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    transition: width .3s ease;
+  }
+
+  .btnCta {
+    width: 100%;
+  }
+
+  .menuContainer {
+    display: initial;
+  }
+}
