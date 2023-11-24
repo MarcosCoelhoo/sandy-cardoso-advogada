@@ -1,6 +1,6 @@
 .container {
   max-width: 100rem;
-  margin: 0 auto;
+  margin: 0 auto 4rem auto;
   position: relative;
 }
 
@@ -91,7 +91,7 @@
   }
   .content {
     position: inherit;
-    padding: 2rem;
+    padding: 3.5rem 1rem;
 
     background-color: var(--bw-50);
     background-image: radial-gradient(rgba(192, 122, 124, .19) 2px, transparent 0);
@@ -122,11 +122,11 @@
   }
 
   .title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .description {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .logo {
@@ -134,7 +134,7 @@
   }
 
   .btnCta {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
  
