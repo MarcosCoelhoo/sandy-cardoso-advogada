@@ -1,0 +1,148 @@
+.container {
+  /* border: 1px solid red; */
+  padding: 3rem 4rem;
+  border-bottom: 2px solid var(--principal-400);
+  border-top: 2px solid var(--principal-400);
+  background: linear-gradient(to bottom, var(--principal-50), var(--principal-100));
+}
+
+.onlineService {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.divisor {
+  height: 14rem;
+  width: 2px;
+  background: var(--principal-400);
+}
+
+.titleContainer {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.title {
+  font-family: var(--font-title);
+  font-weight: normal;
+  font-size: 3.25rem;
+  text-align: right;
+  color: var(--principal-800);
+}
+
+.title span {
+  color: #46BA1D;
+}
+
+.box {
+  width: auto;
+}
+
+
+.subtitle {
+  font-family: var(--font-text);
+  font-weight: 400;
+  margin: .75rem;
+  text-align: left;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #59D72D, #33A80A);
+  border-radius: 8px;
+  padding: 0.25rem 2rem;
+  width: fit-content;
+
+  font-family: var(--font-text);
+  font-size: 2rem;
+  color: var(--bw-50);
+  transition: transform .3s linear;
+}
+
+.button:hover, .button:focus {
+  transform: translateY(-3px);
+  outline: 2px solid var(--principal-400);
+}
+
+.icon {
+  width: 3rem;
+}
+
+.logoContainer {
+  padding: 4rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 37.5rem;
+}
+
+@media (max-width: 900px) {
+  .onlineService {
+    gap: 3rem;
+  }
+
+  .divisor {
+    height: 10rem;
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .icon {
+    width: 2.25rem;
+  }
+
+  .button {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding: 3rem 1.5rem;
+  }
+
+  .onlineService {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .titleContainer {
+    justify-content: center;
+  }
+
+  .title {
+  text-align: center;
+  }
+
+  .divisor {
+    width: 70%;
+    height: 2px;
+  }
+  
+  .box {
+
+    width: 70%;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .logoContainer {
+    padding: 2.5rem 2rem;
+  }
+}

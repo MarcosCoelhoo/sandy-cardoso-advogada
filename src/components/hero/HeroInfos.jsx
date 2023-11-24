@@ -6,7 +6,7 @@ const HeroInfos = () => {
   return (
     <ul className={styles.container}>
       <li className={styles.box}>
-        <div className={styles.iconBox}>
+        <div className={styles.iconBox} tabIndex={0}>
           <GraduationCap size={20} weight="light" />
         </div>
         <h2 className={styles.title}>
@@ -17,7 +17,7 @@ const HeroInfos = () => {
       <span className={styles.divisor}></span>
 
       <li className={styles.box}>
-        <div className={styles.iconBox}>
+        <div className={styles.iconBox} tabIndex={0}>
           <Heart size={20} weight="light" />
         </div>
         <h2 className={styles.title}>
@@ -29,7 +29,7 @@ const HeroInfos = () => {
       <span className={styles.divisor}></span>
 
       <li className={styles.box}>
-        <div className={styles.iconBox}>
+        <div className={styles.iconBox} tabIndex={0}>
           <CirclesFour size={20} weight="light" />
         </div>
         <h2 className={styles.title}>

@@ -6,7 +6,7 @@ const Soluctions = () => {
   return (
     <section className={styles.container}>
       <h1 className={styles.title}>Soluções Jurídicas</h1>
-      <div className={styles.box}>
+      <div className={styles.box} tabIndex={0}>
         <div className={styles.iconBox}>
           <HeartHalf size={20} weight="light" />
         </div>
@@ -15,7 +15,8 @@ const Soluctions = () => {
           <p>Assessoria em Direito de Família</p>
         </div>
       </div>
-      <div className={styles.box}>
+
+      <div className={styles.box} tabIndex={0}>
         <div className={styles.iconBox}>
           <Scales size={20} weight="light" />
         </div>
@@ -24,7 +25,8 @@ const Soluctions = () => {
           <p>Consultoria em Direito Previdenciário</p>
         </div>
       </div>
-      <div className={`${styles.box} ${styles.zap}`}>
+
+      <div className={`${styles.box} ${styles.zap}`} tabIndex={0}>
         <a
           href="#"
           className={styles.iconBox}
