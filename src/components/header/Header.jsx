@@ -38,16 +38,16 @@ const Header = () => {
         </a>
 
         <nav className={`${styles.nav} ${isOpenMenu && styles.visible}`}>
-          <a className={styles.link} href="#" tabIndex={1}>
+          <a className={styles.link} href="#" tabIndex={0}>
             Contato
           </a>
-          <a className={styles.link} href="#" tabIndex={2}>
+          <a className={styles.link} href="#" tabIndex={0}>
             Serviços
           </a>
-          <a className={styles.link} href="#" tabIndex={3}>
+          <a className={styles.link} href="#" tabIndex={0}>
             Sobre mim
           </a>
-          <a href="#" className={styles.btnCta} tabIndex={4}>
+          <a href="#" className={styles.btnCta} tabIndex={0}>
             Entrar em contato
           </a>
         </nav>

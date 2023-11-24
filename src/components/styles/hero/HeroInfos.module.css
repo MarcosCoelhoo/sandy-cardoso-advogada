@@ -41,6 +41,10 @@
   transform: scale(1.1);
 }
 
+.iconBox:focus {
+  outline-color: var(--principal-700);
+}
+
 .iconBox * {
   fill: var(--bw-50);
   
