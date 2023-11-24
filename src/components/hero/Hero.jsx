@@ -3,6 +3,7 @@ import styles from '../styles/hero/Hero.module.css';
 import heroBackground from '../../assets/images/image-hero.png';
 import heroBackgroundMobile from '../../assets/images/image-hero-mobile.png';
 import LogoIconExtended from '../../assets/icons/logo-extended.svg?react';
+import HeroInfos from './HeroInfos';
 
 const Hero = () => {
   return (
@@ -38,6 +39,8 @@ const Hero = () => {
           <img src={heroBackground} alt="Imagem de Sandy no seu escritório" />
         </picture>
       </div>
+
+      <HeroInfos />
     </section>
   );
 };

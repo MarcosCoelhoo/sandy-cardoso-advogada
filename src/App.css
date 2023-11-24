@@ -29,6 +29,8 @@
 
   --font-title: 'Alice', serif;
   --font-text: 'Barlow', sans-serif;
+
+  --shadow: 6px 8px 12px 0 rgba(41, 41, 41, .15);
 }
 
 * {
@@ -37,9 +39,14 @@
   box-sizing: border-box;
 }
 
+*::selection {
+  color: var(--bw-50);
+  background: var(--principal-400);
+}
+
 body {
   background: var(--bw-50);
-  margin-bottom: 400px;
+  margin-bottom: 600px;
 }
 
 ul, li {
