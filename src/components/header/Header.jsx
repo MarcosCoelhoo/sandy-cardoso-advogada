@@ -7,6 +7,23 @@ import MenuCloseIcon from '../../assets/icons/menu-close.svg?react';
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = React.useState(false);
 
+  const handleMenuMobile = (event) => {
+    switch (event.type) {
+      case 'click':
+        setIsOpenMenu(!isOpenMenu);
+        break;
+
+      case 'keydown':
+        if (event.key === 'Enter') {
+          setIsOpenMenu(!isOpenMenu);
+        }
+        break;
+
+      default:
+        break;
+    }
+  };
+
   return (
     <header className={styles.container}>
       <div className={styles.miniHeader}>
@@ -21,23 +38,25 @@ const Header = () => {
         </a>
 
         <nav className={`${styles.nav} ${isOpenMenu && styles.visible}`}>
-          <a className={styles.link} href="#">
+          <a className={styles.link} href="#" tabIndex={1}>
             Contato
           </a>
-          <a className={styles.link} href="#">
+          <a className={styles.link} href="#" tabIndex={2}>
             Serviços
           </a>
-          <a className={styles.link} href="#">
+          <a className={styles.link} href="#" tabIndex={3}>
             Sobre mim
           </a>
-          <a href="#" className={styles.btnCta}>
+          <a href="#" className={styles.btnCta} tabIndex={4}>
             Entrar em contato
           </a>
         </nav>
 
         <div
           className={styles.menuContainer}
-          onClick={() => setIsOpenMenu(!isOpenMenu)}
+          onClick={handleMenuMobile}
+          onKeyDown={handleMenuMobile}
+          tabIndex={0}
         >
           {!isOpenMenu ? <MenuIcon /> : <MenuCloseIcon />}
         </div>
