@@ -4,6 +4,7 @@ import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import Soluctions from './components/soluctions/Soluctions';
 import OnlineService from './components/onlineService/OnlineService';
+import Location from './components/location/Location';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <main>
         <Soluctions />
         <OnlineService />
+        <Location />
       </main>
     </>
   );

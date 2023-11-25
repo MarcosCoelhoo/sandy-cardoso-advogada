@@ -1,5 +1,4 @@
 .container {
-  /* border: 1px solid red; */
   padding: 3rem 4rem;
   border-bottom: 2px solid var(--principal-400);
   border-top: 2px solid var(--principal-400);
@@ -46,7 +45,7 @@
 .subtitle {
   font-family: var(--font-text);
   font-weight: 400;
-  margin: .75rem;
+  margin-bottom: 0.75rem;
   text-align: left;
   width: 100%;
 }
@@ -81,6 +80,7 @@
   box-shadow: var(--shadow);
   display: flex;
   justify-content: center;
+  margin-bottom: 8rem;
 }
 
 .logo {
@@ -111,7 +111,7 @@
 
 @media (max-width: 650px) {
   .container {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1rem;
   }
 
   .onlineService {
@@ -143,6 +143,6 @@
   }
 
   .logoContainer {
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 1rem;
   }
 }
