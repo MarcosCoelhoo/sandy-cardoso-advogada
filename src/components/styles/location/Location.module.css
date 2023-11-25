@@ -1,7 +1,7 @@
 .container {
   display: flex;
   padding: 0 4rem;
-  margin: 0 auto;
+  margin: 0 auto 8rem auto;
   gap: 4rem;
   justify-content: center;
 }

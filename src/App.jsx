@@ -5,6 +5,7 @@ import Hero from './components/hero/Hero';
 import Soluctions from './components/soluctions/Soluctions';
 import OnlineService from './components/onlineService/OnlineService';
 import Location from './components/location/Location';
+import About from './components/about/About';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Soluctions />
         <OnlineService />
         <Location />
+        <About />
       </main>
     </>
   );
