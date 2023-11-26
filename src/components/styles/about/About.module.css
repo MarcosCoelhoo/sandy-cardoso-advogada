@@ -82,6 +82,8 @@
 .iconBox {
   width: 2.75rem;
   position: relative;
+  outline: none;
+
 }
 
 .iconDetail {
@@ -96,6 +98,7 @@
 
   font-family: var(--font-text);
   color: var(--bw-50);
+
 }
 
 .iconDetail::before {
@@ -147,14 +150,14 @@
 
 .logoContainer {
   padding: 4rem;
-  /* box-shadow: var(--shadow); */
   display: flex;
   justify-content: center;
-  margin-bottom: 8rem;
+  /* margin-bottom: 8rem; */
 }
 
 .logo {
   max-width: 30rem;
+  margin: 0 auto;
 }
 
 @media (max-width: 1000px) {
@@ -223,7 +226,7 @@
   }
  
   .logoContainer {
-    padding: 1rem 1rem;
+    padding: 1rem 1rem 4rem 1rem;
   }
 
   .logo {

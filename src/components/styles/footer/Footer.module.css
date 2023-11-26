@@ -1,0 +1,134 @@
+.container {
+  background: var(--principal-500);
+  position: relative;
+  background-image: url("../../../assets/icons/logo-extended-footer.svg");
+  background-position: bottom -50px left;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 100rem;
+  padding: 4rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.contacts {
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+}
+
+.title {
+  color: var(--principal-800);
+  font-weight: normal;
+  font-family: var(--font-title);
+  font-size: 3rem;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.socialBox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.iconBox {
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconBox * {
+  color: var(--principal-300);
+}
+
+.label {
+  font-family: var(--font-text);
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--bw-50);
+}
+
+.label:hover {
+  color: var(--principal-300);
+}
+
+.divisor {
+  height: 14rem;
+  width: 2px;
+  background: var(--principal-300);
+}
+
+.quote {
+  min-height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.quoteIcon {
+  width: 4rem;
+}
+
+.quoteContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  
+}
+
+.text {
+  font-family: var(--font-text);
+  font-size: 1.5rem;
+  max-width: 20ch;
+  font-weight: 400;
+  color: var(--bw-50);
+}
+
+.author {
+  font-family: var(--font-title);
+  align-self: flex-end;
+  color: var(--principal-800);
+  font-size: 1.25rem;
+}
+
+.footerDetail {
+  position: absolute;
+  /* top: 4rem; */
+  bottom: -40px;
+  z-index: 9;
+}
+
+.footerDetail * {
+  fill: var(--principal-600);
+}
+
+@media (max-width: 750px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4rem 1rem;
+    gap: 2.5rem;
+  }
+
+  .divisor {
+    width: 80%;
+    height: 2px;
+  }
+
+  .quoteIcon {
+    width: 3rem;
+  }
+}
