@@ -6,6 +6,7 @@ import Soluctions from './components/soluctions/Soluctions';
 import OnlineService from './components/onlineService/OnlineService';
 import Location from './components/location/Location';
 import About from './components/about/About';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <Location />
         <About />
       </main>
+
+      <Footer />
     </>
   );
 }
