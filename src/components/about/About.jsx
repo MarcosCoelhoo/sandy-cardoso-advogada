@@ -6,8 +6,8 @@ import {
   InstagramLogo,
   WhatsappLogo,
 } from '@phosphor-icons/react';
-import aboutImDesktop from '../../assets/images/image-about.png';
-import aboutImgmMobile from '../../assets/images/image-about-mobile.png';
+import aboutImDesktop from '../../assets/images/image-about.webp';
+import aboutImgmMobile from '../../assets/images/image-about-mobile.webp';
 import LogoExtendend from '../../assets/icons/logo-extended.svg?react';
 
 const About = () => {
@@ -44,9 +44,17 @@ const About = () => {
           </div>
 
           <picture className={styles.image}>
-            <source media="(max-width: 700px)" srcSet={aboutImgmMobile} />
+            <source
+              media="(max-width: 700px)"
+              srcSet={aboutImgmMobile}
+              loading="lazy"
+            />
 
-            <img src={aboutImDesktop} alt="Sandy Cardoso sentada" />
+            <img
+              src={aboutImDesktop}
+              alt="Sandy Cardoso sentada"
+              loading="lazy"
+            />
           </picture>
         </div>
       </section>

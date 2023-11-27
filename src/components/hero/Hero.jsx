@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/hero/Hero.module.css';
-import heroBackground from '../../assets/images/image-hero.png';
-import heroBackgroundMobile from '../../assets/images/image-hero-mobile.png';
+import heroBackground from '../../assets/images/image-hero.webp';
+import heroBackgroundMobile from '../../assets/images/image-hero-mobile.webp';
 import LogoIconExtended from '../../assets/icons/logo-extended.svg?react';
 import HeroInfos from './HeroInfos';
 
@@ -34,9 +34,17 @@ const Hero = () => {
         </div>
 
         <picture className={styles.image}>
-          <source media="(max-width: 600px)" srcSet={heroBackgroundMobile} />
+          <source
+            media="(max-width: 600px)"
+            srcSet={heroBackgroundMobile}
+            loading="lazy"
+          />
 
-          <img src={heroBackground} alt="Imagem de Sandy no seu escritório" />
+          <img
+            src={heroBackground}
+            alt="Imagem de Sandy no seu escritório"
+            loading="lazy"
+          />
         </picture>
       </div>
 

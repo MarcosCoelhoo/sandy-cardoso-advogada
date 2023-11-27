@@ -1,6 +1,6 @@
 .container {
   padding: 20rem 4rem 5rem 4rem;
-  background: url('../../../assets/images/image-hero.png') center center no-repeat;
+  background: url('../../../assets/images/image-hero.webp') center center no-repeat;
   background-size: cover;
   backdrop-filter: blur(2px);
   position: relative;

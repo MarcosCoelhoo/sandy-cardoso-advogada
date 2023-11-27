@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/location/Location.module.css';
-import localImg from '../../assets/images/local-image.png';
+import localImg from '../../assets/images/local-image.webp';
 import LogoExtended from '../../assets/icons/logo-extended.svg?react';
 
 import {
@@ -15,7 +15,11 @@ const Location = () => {
   return (
     <section className={styles.container}>
       <div className={styles.image}>
-        <img src={localImg} alt="Parte da frente do escritório da Sandy" />
+        <img
+          src={localImg}
+          alt="Parte da frente do escritório da Sandy"
+          loading="lazy"
+        />
         <span className={styles.imgDetail}>
           <div className={styles.iconDetail}>
             <LogoExtended />
