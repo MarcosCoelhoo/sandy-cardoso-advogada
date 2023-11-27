@@ -33,21 +33,45 @@ const Header = () => {
       </div>
 
       <div className={styles.header}>
-        <a href="/" className={styles.logo} alt="Logo Sandy Cardoso">
+        <a
+          href="/"
+          className={styles.logo}
+          alt="Logo Sandy Cardoso"
+          data-aos="fade-right"
+        >
           <LogoMin />
         </a>
 
         <nav className={`${styles.nav} ${isOpenMenu && styles.visible}`}>
-          <a className={styles.link} href="#" tabIndex={0}>
+          <a className={styles.link} href="#" tabIndex={0} data-aos="fade-up">
             Contato
           </a>
-          <a className={styles.link} href="#" tabIndex={0}>
+          <a
+            className={styles.link}
+            href="#"
+            tabIndex={0}
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             Serviços
           </a>
-          <a className={styles.link} href="#" tabIndex={0}>
+
+          <a
+            className={styles.link}
+            href="#"
+            tabIndex={0}
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             Sobre mim
           </a>
-          <a href="#" className={styles.btnCta} tabIndex={0}>
+
+          <a
+            href="#"
+            className={styles.btnCta}
+            tabIndex={0}
+            data-aos="fade-left"
+          >
             Entrar em contato
           </a>
         </nav>

@@ -22,6 +22,7 @@
   height: 100%;
   position: absolute;
   left: 0;
+  z-index: 2;
 }
 
 .logo {
@@ -91,6 +92,7 @@
 
 .image {
   max-width: 1000px;
+  position: relative;
 }
 
 @media (max-width: 850px) {

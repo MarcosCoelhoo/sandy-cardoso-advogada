@@ -6,7 +6,8 @@ const Soluctions = () => {
   return (
     <section className={styles.container}>
       <h1 className={styles.title}>Soluções Jurídicas</h1>
-      <div className={styles.box} tabIndex={0}>
+
+      <div className={styles.box} tabIndex={0} data-aos="fade-left">
         <div className={styles.iconBox}>
           <HeartHalf size={20} weight="light" />
         </div>
@@ -16,7 +17,12 @@ const Soluctions = () => {
         </div>
       </div>
 
-      <div className={styles.box} tabIndex={0}>
+      <div
+        className={styles.box}
+        tabIndex={0}
+        data-aos="fade-left"
+        data-aos-delay="100"
+      >
         <div className={styles.iconBox}>
           <Scales size={20} weight="light" />
         </div>
@@ -26,7 +32,12 @@ const Soluctions = () => {
         </div>
       </div>
 
-      <div className={`${styles.box} ${styles.zap}`} tabIndex={0}>
+      <div
+        className={`${styles.box} ${styles.zap}`}
+        tabIndex={0}
+        data-aos="fade-left"
+        data-aos-delay="200"
+      >
         <a
           href="#"
           className={styles.iconBox}

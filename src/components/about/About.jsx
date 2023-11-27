@@ -17,8 +17,14 @@ const About = () => {
         <div className={styles.about}>
           <div className={styles.content}>
             <div className={styles.infos}>
-              <h1 className={styles.title}>Sobre mim</h1>
-              <p className={styles.description}>
+              <h1 className={styles.title} data-aos="fade-right">
+                Sobre mim
+              </h1>
+              <p
+                className={styles.description}
+                data-aos="fade-right"
+                data-aos-delay="100"
+              >
                 Advogada Sandy Carvalho, graduada em Direito pela Universidade
                 da Amazônia - UNAMA, é especialista em demandas de Direito de
                 Família e Previdenciário.
@@ -26,24 +32,34 @@ const About = () => {
             </div>
 
             <div className={styles.socials}>
-              <a href="#" className={styles.iconBox}>
+              <a href="#" className={styles.iconBox} data-aos="fade-up">
                 <FacebookLogo weight="light" />
                 <span className={styles.iconDetail}>Facebook</span>
               </a>
 
-              <a href="#" className={styles.iconBox}>
+              <a
+                href="#"
+                className={styles.iconBox}
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <InstagramLogo weight="light" />
                 <span className={styles.iconDetail}>Instagram</span>
               </a>
 
-              <a href="#" className={styles.iconBox}>
+              <a
+                href="#"
+                className={styles.iconBox}
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <WhatsappLogo weight="light" />
                 <span className={styles.iconDetail}>WhatsApp</span>
               </a>
             </div>
           </div>
 
-          <picture className={styles.image}>
+          <picture className={styles.image} data-aos="fade-down">
             <source
               media="(max-width: 700px)"
               srcSet={aboutImgmMobile}
@@ -60,7 +76,7 @@ const About = () => {
       </section>
 
       <div className={styles.logoContainer}>
-        <div className={styles.logo}>
+        <div className={styles.logo} data-aos="zoom-in" data-aos-delay="200">
           <LogoExtendend />
         </div>
       </div>
