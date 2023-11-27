@@ -14,7 +14,7 @@ import {
 const Location = () => {
   return (
     <section className={styles.container}>
-      <div className={styles.image}>
+      <div className={styles.image} data-aos="fade-right">
         <img
           src={localImg}
           alt="Parte da frente do escritório da Sandy"
@@ -40,7 +40,7 @@ const Location = () => {
               <NavigationArrow weight="light" />
             </div>
 
-            <p className={styles.label}>
+            <p className={styles.label} data-aos="fade-up">
               Rua Raimundo Vieira, n° 802, Bairro Marituba, Oeiras do Pará
               (68470.000).
             </p>
@@ -51,7 +51,7 @@ const Location = () => {
               <Clock weight="light" />
             </div>
 
-            <p className={styles.label}>
+            <p className={styles.label} data-aos="fade-up" data-aos-delay="100">
               Segunda à sexta, de 8h às 12h e 14h às 17h
             </p>
           </li>
@@ -63,6 +63,8 @@ const Location = () => {
 
             <a
               className={styles.label}
+              data-aos="fade-up"
+              data-aos-delay="200"
               href="mailto:adv.sandycarvalho@gmail.com"
             >
               adv.sandycarvalho@gmail.com
@@ -74,7 +76,12 @@ const Location = () => {
               <Phone weight="light" />
             </div>
 
-            <a className={styles.label} href="tel:9191431809">
+            <a
+              className={styles.label}
+              href="tel:9191431809"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               +91 9143-1809
             </a>
           </li>
@@ -82,7 +89,7 @@ const Location = () => {
 
         <div className={styles.contact}>
           <p>Entre em contato agora mesmo</p>
-          <a href="#" className={styles.button}>
+          <a href="#" className={styles.button} data-aos="fade-up">
             <div className={styles.iconZap}>
               <WhatsappLogo size={20} weight="light" />
             </div>

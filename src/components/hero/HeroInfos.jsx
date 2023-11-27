@@ -5,7 +5,7 @@ import { GraduationCap, Heart, CirclesFour } from '@phosphor-icons/react';
 const HeroInfos = () => {
   return (
     <ul className={styles.container}>
-      <li className={styles.box}>
+      <li className={styles.box} data-aos="zoom-in">
         <div className={styles.iconBox} tabIndex={0}>
           <GraduationCap size={20} weight="light" />
         </div>
@@ -16,7 +16,7 @@ const HeroInfos = () => {
 
       <span className={styles.divisor}></span>
 
-      <li className={styles.box}>
+      <li className={styles.box} data-aos="zoom-in" data-aos-delay="100">
         <div className={styles.iconBox} tabIndex={0}>
           <Heart size={20} weight="light" />
         </div>
@@ -28,7 +28,7 @@ const HeroInfos = () => {
 
       <span className={styles.divisor}></span>
 
-      <li className={styles.box}>
+      <li className={styles.box} data-aos="zoom-in" data-aos-delay="200">
         <div className={styles.iconBox} tabIndex={0}>
           <CirclesFour size={20} weight="light" />
         </div>

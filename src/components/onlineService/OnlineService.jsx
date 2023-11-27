@@ -19,7 +19,7 @@ const OnlineService = () => {
 
           <div className={styles.box}>
             <p className={styles.subtitle}>Entre em contato agora mesmo</p>
-            <a href="#" className={styles.button}>
+            <a href="#" className={styles.button} data-aos="fade-up">
               <div className={styles.icon}>
                 <WhatsappLogo size={20} weight="light" />
               </div>
@@ -30,7 +30,7 @@ const OnlineService = () => {
       </section>
 
       <div className={styles.logoContainer}>
-        <div className={styles.logo}>
+        <div className={styles.logo} data-aos="zoom-in">
           <LogoComplete />
         </div>
       </div>

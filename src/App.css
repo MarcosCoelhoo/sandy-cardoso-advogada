@@ -46,6 +46,7 @@
 
 body {
   background: var(--bw-50);
+  overflow-x: hidden;
 }
 
 ul, li {

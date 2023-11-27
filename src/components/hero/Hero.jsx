@@ -10,12 +10,12 @@ const Hero = () => {
     <section className={styles.container}>
       <div className={styles.hero}>
         <div className={styles.content}>
-          <div className={styles.logo}>
+          <div className={styles.logo} data-aos="fade-right">
             <LogoIconExtended />
           </div>
 
           <div className={styles.infos}>
-            <h1 className={styles.title}>
+            <h1 className={styles.title} data-aos="fade-right">
               Sandy
               <br />
               Carvalho
@@ -23,17 +23,26 @@ const Hero = () => {
               Advocacia
             </h1>
 
-            <p className={styles.description}>
+            <p
+              className={styles.description}
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               Atuação em Direito de Família e Previdenciário
             </p>
           </div>
 
-          <a href="#" className={styles.btnCta}>
+          <a
+            href="#"
+            className={styles.btnCta}
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
             Entre em contato
           </a>
         </div>
 
-        <picture className={styles.image}>
+        <picture className={styles.image} data-aos="fade-left">
           <source
             media="(max-width: 600px)"
             srcSet={heroBackgroundMobile}
