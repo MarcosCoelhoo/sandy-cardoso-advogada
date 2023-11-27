@@ -60,7 +60,8 @@
   color: var(--bw-50);
 }
 
-.label:hover {
+.label:hover, .label:focus {
+  outline-color: var(--principal-400);
   color: var(--principal-300);
 }
 
