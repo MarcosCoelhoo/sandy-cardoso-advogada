@@ -33,7 +33,7 @@ const Header = () => {
       </div>
 
       <div className={styles.header}>
-        <a href="/" className={styles.logo}>
+        <a href="/" className={styles.logo} alt="Logo Sandy Cardoso">
           <LogoMin />
         </a>
 
