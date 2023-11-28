@@ -10,6 +10,7 @@ import Footer from './components/footer/Footer';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Head from './Head';
 
 function App() {
   React.useEffect(() => {
@@ -17,12 +18,13 @@ function App() {
       duration: 600,
       offset: 100,
       once: true,
-      // startEvent: 'load',
     });
   }, []);
 
   return (
     <>
+      <Head />
+
       <Header />
 
       <Hero />
