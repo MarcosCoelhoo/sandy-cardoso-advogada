@@ -152,7 +152,7 @@ outline: none;
 }
 
 .button:hover, .button:focus {
-  transform: translateY(-3px);
+  transform: translateY(-3px) !important;
   border: 2px solid var(--principal-400);
   color: var(--principal-400);
 }
