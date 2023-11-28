@@ -67,7 +67,7 @@
 }
 
 .button:hover, .button:focus {
-  transform: translateY(-3px);
+  transform: translateY(-3px) !important;
   outline: 2px solid var(--principal-400);
 }
 

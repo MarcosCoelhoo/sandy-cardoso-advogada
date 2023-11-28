@@ -21,12 +21,12 @@
   background: var(--principal-gradient);
   border-radius: 0.25rem;
   border: 2px solid var(--principal-400);
-  transition: box-shadow .3s, transform .1s linear;
+  transition: box-shadow .5s, transform .1s linear;
 }
 
 .box:hover {
   box-shadow: var(--shadow);
-  transform: translateY(-2px);
+  transform: translateY(-2px) !important;
 }
 
 .box:focus {

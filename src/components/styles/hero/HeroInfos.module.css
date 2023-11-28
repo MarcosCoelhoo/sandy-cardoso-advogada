@@ -1,6 +1,5 @@
 .container {
   display: flex;
-  align-items: top;
   justify-content: space-between;
   gap: 1.5rem;
   padding: 2.5rem 3rem;
@@ -10,6 +9,8 @@
   background: var(--bw-50);
   border-radius: 0.25rem;
   box-shadow: var(--shadow);
+  position: relative;
+  z-index: 3;
 }
 
 .divisor {

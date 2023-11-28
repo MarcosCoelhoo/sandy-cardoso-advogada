@@ -78,7 +78,7 @@
   letter-spacing: 0.0625rem;
   cursor: pointer;
   box-shadow: inset 0 -100px 0 0 var(--principal-400);
-  transition: ease-out 0.5s;
+  transition: ease-out 0.5s !important;
   outline-color:  var(--principal-400);
   border: 2px solid transparent;
   border-radius: 4px;
