@@ -9,9 +9,13 @@
 
 <h4 align="center">Website feito para a Advogada Sandy Carvalho</h4>
 
+<p align="center">
+  <a href="https://sandycarvalhoadv.com/" target="_blank">Clique para acessar</a>
+</p>
+
 ## Design
 
-![page website sandy carvalho](./image-full-page.png)
+![page website sandy carvalho](https://i.ibb.co/5M8sT68/website-inteiro.png)
 
 
 ## Ferramentas usadas para construção do site
