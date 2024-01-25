@@ -4,7 +4,7 @@ import { HeartHalf, Scales, WhatsappLogo } from '@phosphor-icons/react';
 
 const Soluctions = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="soluctions">
       <h1 className={styles.title}>Soluções Jurídicas</h1>
 
       <div className={styles.box} tabIndex={0} data-aos="fade-left">
@@ -39,7 +39,9 @@ const Soluctions = () => {
         data-aos-delay="200"
       >
         <a
-          href="#"
+          href="https://api.whatsapp.com/message/3CZ2EIKXL5QEI1?autoload=1&app_absent=0"
+          target="_blank"
+          rel="noreferrer"
           className={styles.iconBox}
           title="Me chame para uma conversa!"
         >

@@ -19,7 +19,14 @@ const OnlineService = () => {
 
           <div className={styles.box}>
             <p className={styles.subtitle}>Entre em contato agora mesmo</p>
-            <a href="#" className={styles.button} data-aos="fade-up">
+            <a
+              href="https://api.whatsapp.com/message/3CZ2EIKXL5QEI1?autoload=1&app_absent=0"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Entrar em contato com a advogada"
+              className={styles.button}
+              data-aos="fade-up"
+            >
               <div className={styles.icon}>
                 <WhatsappLogo size={20} weight="light" />
               </div>

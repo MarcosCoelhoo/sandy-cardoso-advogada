@@ -34,7 +34,10 @@ const Header = () => {
 
       <div className={styles.header}>
         <a
-          href="/"
+          href="https://api.whatsapp.com/message/3CZ2EIKXL5QEI1?autoload=1&app_absent=0"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Logo Sandy Carvalho e link para a tela inicial do site"
           className={styles.logo}
           alt="Logo Sandy Cardoso"
           data-aos="fade-right"
@@ -43,12 +46,19 @@ const Header = () => {
         </a>
 
         <nav className={`${styles.nav} ${isOpenMenu && styles.visible}`}>
-          <a className={styles.link} href="#" tabIndex={0} data-aos="fade-up">
+          <a
+            className={styles.link}
+            href="#footer"
+            aria-label="Ir para a seção de contatos e rodapé"
+            tabIndex={0}
+            data-aos="fade-up"
+          >
             Contato
           </a>
           <a
             className={styles.link}
-            href="#"
+            href="#soluctions"
+            aria-label="Ir para a seção de serviços"
             tabIndex={0}
             data-aos="fade-up"
             data-aos-delay="100"
@@ -58,7 +68,8 @@ const Header = () => {
 
           <a
             className={styles.link}
-            href="#"
+            href="#about"
+            aria-label="Ir para a seção de sobre"
             tabIndex={0}
             data-aos="fade-up"
             data-aos-delay="200"
@@ -67,7 +78,8 @@ const Header = () => {
           </a>
 
           <a
-            href="#"
+            href="https://api.whatsapp.com/message/3CZ2EIKXL5QEI1?autoload=1&app_absent=0"
+            aria-label="Entrar em contato com a advogada"
             className={styles.btnCta}
             tabIndex={0}
             data-aos="fade-left"

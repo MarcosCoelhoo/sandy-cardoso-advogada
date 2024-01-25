@@ -7,12 +7,11 @@ import {
   WhatsappLogo,
 } from '@phosphor-icons/react';
 
-import LogoExtended from '../../assets/icons/logo-extended.svg?react';
 import QuoteIcon from '../../assets/icons/quote-icon.svg?react';
 
 const Footer = () => {
   return (
-    <footer className={styles.container}>
+    <footer className={styles.container} id="footer">
       <div className={styles.footer}>
         <div className={styles.contacts}>
           <h1 className={styles.title}>Contatos</h1>
@@ -23,7 +22,12 @@ const Footer = () => {
                 <FacebookLogo />
               </div>
 
-              <a href="#" className={styles.label}>
+              <a
+                href="https://www.facebook.com/sandy.cardoso.3"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.label}
+              >
                 facebook.com/sandyCarvalho
               </a>
             </li>
@@ -32,7 +36,12 @@ const Footer = () => {
                 <InstagramLogo />
               </div>
 
-              <a href="#" className={styles.label}>
+              <a
+                href="https://www.instagram.com/_sandycarvalho_/"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.label}
+              >
                 @_sandycarvalho_
               </a>
             </li>
@@ -41,7 +50,12 @@ const Footer = () => {
                 <WhatsappLogo />
               </div>
 
-              <a href="#" className={styles.label}>
+              <a
+                href="https://api.whatsapp.com/message/3CZ2EIKXL5QEI1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.label}
+              >
                 +91 9143-1809
               </a>
             </li>
@@ -50,7 +64,11 @@ const Footer = () => {
                 <Phone />
               </div>
 
-              <a href="#" className={styles.label}>
+              <a
+                href="
+              tel:9191431809"
+                className={styles.label}
+              >
                 +91 9143-1809
               </a>
             </li>

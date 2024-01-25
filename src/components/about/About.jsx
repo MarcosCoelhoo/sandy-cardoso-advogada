@@ -13,7 +13,7 @@ import LogoExtendend from '../../assets/icons/logo-extended.svg?react';
 const About = () => {
   return (
     <>
-      <section className={styles.container}>
+      <section className={styles.container} id="about">
         <div className={styles.about}>
           <div className={styles.content}>
             <div className={styles.infos}>
@@ -32,13 +32,23 @@ const About = () => {
             </div>
 
             <div className={styles.socials}>
-              <a href="#" className={styles.iconBox} data-aos="fade-up">
+              <a
+                href="https://www.facebook.com/sandy.cardoso.3"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Facebook da advogada"
+                className={styles.iconBox}
+                data-aos="fade-up"
+              >
                 <FacebookLogo weight="light" />
                 <span className={styles.iconDetail}>Facebook</span>
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/_sandycarvalho_/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram da advogada"
                 className={styles.iconBox}
                 data-aos="fade-up"
                 data-aos-delay="100"
@@ -48,7 +58,10 @@ const About = () => {
               </a>
 
               <a
-                href="#"
+                href="https://api.whatsapp.com/message/3CZ2EIKXL5QEI1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Whatsapp da advogada"
                 className={styles.iconBox}
                 data-aos="fade-up"
                 data-aos-delay="100"

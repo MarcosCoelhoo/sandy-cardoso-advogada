@@ -14,7 +14,7 @@ const Head = () => {
   }, []);
 
   React.useEffect(() => {
-    document.title = titlePage || 'Sandy Cardoso Advocacia';
+    document.title = titlePage || 'Sandy Carvalho Advocacia';
   }, [titlePage]);
 
   return <></>;

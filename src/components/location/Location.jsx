@@ -63,6 +63,7 @@ const Location = () => {
 
             <a
               className={styles.label}
+              aria-label="Entrar em contato via email com a advogada"
               data-aos="fade-up"
               data-aos-delay="200"
               href="mailto:adv.sandycarvalho@gmail.com"
@@ -79,6 +80,7 @@ const Location = () => {
             <a
               className={styles.label}
               href="tel:9191431809"
+              aria-label="Ligar para a advogada"
               data-aos="fade-up"
               data-aos-delay="300"
             >
@@ -89,7 +91,14 @@ const Location = () => {
 
         <div className={styles.contact}>
           <p>Entre em contato agora mesmo</p>
-          <a href="#" className={styles.button} data-aos="fade-up">
+          <a
+            href="https://api.whatsapp.com/message/3CZ2EIKXL5QEI1?autoload=1&app_absent=0"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Entrar em contato com a advogada"
+            className={styles.button}
+            data-aos="fade-up"
+          >
             <div className={styles.iconZap}>
               <WhatsappLogo size={20} weight="light" />
             </div>

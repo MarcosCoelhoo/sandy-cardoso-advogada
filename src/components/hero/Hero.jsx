@@ -33,7 +33,10 @@ const Hero = () => {
           </div>
 
           <a
-            href="#"
+            href="https://api.whatsapp.com/message/3CZ2EIKXL5QEI1?autoload=1&app_absent=0"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Entrar em contato com a advogada"
             className={styles.btnCta}
             data-aos="zoom-in"
             data-aos-delay="200"

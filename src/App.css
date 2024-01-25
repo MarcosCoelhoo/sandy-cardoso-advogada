@@ -37,6 +37,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+
 }
 
 *::selection {
@@ -47,6 +49,8 @@
 body {
   background: var(--bw-50);
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  
 }
 
 ul, li {
